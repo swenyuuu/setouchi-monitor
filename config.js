@@ -3,7 +3,7 @@
 const WORKER_BASE = "https://setouchi-monitor.cwyu0722.workers.dev";  // TODO: 改成你的
 
 // 2) 你要監測的日期（YYYY-MM-DD）
-const TARGET_DATES = [ "2025-10-29", "2025-10-30", "2025-10-31","2025-11-01"];
+const TARGET_DATES = [ "2025-10-29", "2025-10-30", "2025-10-31", "2025-11-01", "2025-11-02", "2025-11-03"];
 
 // 3) 要監看的場館（facilityId 來自 Network → XHR：/facility-calendar-ticket/{id}）
 //    下面先放好 Chichu（id=3）。Page B / Page C 請把 facilityId 補上數字即可。
