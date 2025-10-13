@@ -18,7 +18,7 @@ const SITES = [
     name: "Page B",
     bookingUrl:
       "https://benesse-artsite.eventos.tokyo/web/portal/797/event/8483/module/booth/239565/185773?language=eng",
-    facilityId: null, // TODO: 在 Network 找 /facility-calendar-ticket/{id} 把 id 貼過來（數字）
+    facilityId: 5, // TODO: 在 Network 找 /facility-calendar-ticket/{id} 把 id 貼過來（數字）
   },
   {
     name: "Page C",
