@@ -3,7 +3,7 @@
 const WORKER_BASE = "https://setouchi-monitor.cwyu0722.workers.dev";  // TODO: 改成你的
 
 // 2) 你要監測的日期（YYYY-MM-DD）
-const TARGET_DATES = [ "2025-10-29", "2025-10-30", "2025-10-31"];
+const TARGET_DATES = [ "2025-10-29", "2025-10-30", "2025-10-31","2025-11-01"];
 
 // 3) 要監看的場館（facilityId 來自 Network → XHR：/facility-calendar-ticket/{id}）
 //    下面先放好 Chichu（id=3）。Page B / Page C 請把 facilityId 補上數字即可。
@@ -15,16 +15,16 @@ const SITES = [
     facilityId: 3, // ✅ 已確定
   },
   {
-    name: "Page B",
+    name: "Teshima Art Museum",
     bookingUrl:
       "https://benesse-artsite.eventos.tokyo/web/portal/797/event/8483/module/booth/239565/185773?language=eng",
     facilityId: 5, // TODO: 在 Network 找 /facility-calendar-ticket/{id} 把 id 貼過來（數字）
   },
   {
-    name: "Page C",
+    name: "Home project: Kinza",
     bookingUrl:
       "https://benesse-artsite.eventos.tokyo/web/portal/797/event/8483/module/booth/239565/185772?language=eng",
-    facilityId: null, // TODO: 同上
+    facilityId: 1, // TODO: 同上
   },
 ];
 
