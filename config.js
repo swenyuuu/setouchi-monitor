@@ -3,11 +3,22 @@
 const WORKER_BASE = "https://setouchi-monitor.cwyu0722.workers.dev";  // TODO: 改成你的
 
 // 2) 你要監測的日期（YYYY-MM-DD）
-const TARGET_DATES = [ "2025-10-29", "2025-10-30", "2025-10-31", "2025-11-01", "2025-11-02", "2025-11-03"];
+const TARGET_DATES = [ "2025-10-28", "2025-10-29", "2025-10-30", "2025-10-31", "2025-11-01", "2025-11-02", "2025-11-03", "2025-11-04", "2025-11-05"];
 
 // 3) 要監看的場館（facilityId 來自 Network → XHR：/facility-calendar-ticket/{id}）
 //    下面先放好 Chichu（id=3）。Page B / Page C 請把 facilityId 補上數字即可。
 const SITES = [
+  {
+    name: "杉本博司", // 自訂名稱
+    bookingUrl: "https://benesse-artsite.eventos.tokyo/web/portal/797/event/8483/module/booth/239565/185771?language=eng",
+    facilityId: 4,     // ← 剛剛在 Network 找到的 id（數字）
+  },
+  {
+    name: "Home project: Kinza",
+    bookingUrl:
+      "https://benesse-artsite.eventos.tokyo/web/portal/797/event/8483/module/booth/239565/185772?language=eng",
+    facilityId: 1, // TODO: 同上
+  },
   {
     name: "Chichu Art Museum",
     bookingUrl:
@@ -20,12 +31,8 @@ const SITES = [
       "https://benesse-artsite.eventos.tokyo/web/portal/797/event/8483/module/booth/239565/185773?language=eng",
     facilityId: 5, // TODO: 在 Network 找 /facility-calendar-ticket/{id} 把 id 貼過來（數字）
   },
-  {
-    name: "Home project: Kinza",
-    bookingUrl:
-      "https://benesse-artsite.eventos.tokyo/web/portal/797/event/8483/module/booth/239565/185772?language=eng",
-    facilityId: 1, // TODO: 同上
-  },
+  
+
 ];
 
 // 4) 目標年月（API 需要 year / month）
